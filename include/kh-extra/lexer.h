@@ -1,5 +1,6 @@
 #pragma once
 
+#if __has_include(<kh-astgen/lexer.h>)
 #include <kh-core/types.h>
 #include <kh-astgen/lexer.h>
 
@@ -18,3 +19,4 @@ kh_bool kh_extra_stringify_token_entry(
   kh_utf8 * out_token_line_str,   kh_sz out_token_line_str_sz,
   kh_utf8 * out_token_column_str, kh_sz out_token_column_str_sz
 );
+#endif
